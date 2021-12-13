@@ -6,11 +6,24 @@
 
 + Get Android jar files (recommended): <a href="https://github.com/CirQ/android-platforms" target="_blank">android-platforms</a>
 
++ Download FlowDroid's full package: [soot-infoflow-cmd-jar-with-dependencies.jar](https://github.com/secure-software-engineering/FlowDroid/releases/download/v2.7.1/soot-infoflow-cmd-jar-with-dependencies.jar)
+
+#### Install Local Repository and Build
+
+```bash
+mvn install:install-file -Dfile=<path-to-flowdroid-jar> \
+    -DgroupId=ca.mcgill.sable \
+    -DartifactId=soot-infoflow \
+    -Dversion=2.7.1 \
+    -Dpackaging=jar \
+    -DlocalRepositoryPath=lib-repo            # install jar
+
+mvn clean package                             # compile
+```
+
 #### Run Aper
 
 ```bash
-mvn clean package                             # compile
-
 java -jar APER-jar-with-dependencies.jar \    # run Aper
     -s <path-to-android-platforms-directory> \
     -m arp -M <path-to-aper-mapping-directory> \
