@@ -33,7 +33,7 @@ java -jar APER-jar-with-dependencies.jar \    # run Aper
 
 #### Type-1 bug example
 
-**Get APK of app [MemeTastic](https://aper-project.github.io/assets/bin/io.github.gsantner.memetastic_67.apk)**
+**Get APK of app [MemeTastic](https://aper-project.github.io/assets/bin/io.github.gsantner.memetastic_68.apk)**
 
 Run APER will create folder `analyzerOutput/io.github.gsantner.memetastic/`, in the file `empirical/incomplete.txt`:
 
